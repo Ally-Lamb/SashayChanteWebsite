@@ -1,0 +1,89 @@
+
+body {margin: 0; padding: 0; width: 100%; background-color:#920999; font-family: 'Poppins', sans-serif; font-size: 15pt;}
+
+/*NAVIGATION TOOLS*/
+nav {width: 100%; position: fixed absolute;}
+/*Nav Toggle*/
+ .main {margin: 0 auto; display: block; height: 100%; margin-top: 60px;}
+ .mainInner {display: table; height: 100%; width: 100%; text-align: center;}
+ .mainInner div{display:table-cell; vertical-align: middle; font-size: 3em; font-weight: bold; letter-spacing: 1.25px;}
+ #sidebarMenu {z-index: 10; height: 100%; position: fixed; left: 0; width: 230px; margin-top: 0px; transform: translateX(-290px); transition: transform 250ms ease-in-out; background: linear-gradient(180deg,#920999 70%, #e0218a 100%);}
+ .sidebarMenuInner {margin:0; padding: 90px 45px; border-top: 1px solid rgba(255, 255, 255, 0.10);}
+ .sidebarMenuInner li {list-style: none; color: #FFF; padding: 15px 0px; cursor: pointer; border-bottom: 1px solid rgba(255, 255, 255, 0.10);}
+ .sidebarMenuInner li a {display: flex; line-height: 27px; padding-top: 3px; transition: all 0.4s; color: #fff; font-size: 14px; cursor: pointer; text-decoration: none; text-transform: uppercase; font-family: 'Poppins', sans-serif, cursive; letter-spacing: 3px;}
+ .sidebarMenuInner li a:hover {transition: all 0.4s; color: #e0218a; margin-left: 10px;}
+ .sidebarMenuInner li a span {padding-right: 15px; padding-top: 0px;}
+ .material-symbols-outlined {width: 40px; color: #920999; font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 52}
+ input[type=checkbox]:checked ~ #sidebarMenu {transform: translateX(0);}
+ input[type=checkbox] {transition: all 0.3s; box-sizing: border-box; display: none;}
+ .sidebarIconToggle {transition: all 0.3s; box-sizing: border-box; cursor: pointer; position: absolute; z-index: 99; height: 100%; width: 100%; top: 40px; left: 40px; height: 25px; width: 35px; position: fixed;}.spinner {transition: all 0.3s; box-sizing: border-box; position: absolute; height: 5px; width: 100%; border-radius: 4px; background-color: #920999;}
+ .horizontal {transition: all 0.3s; box-sizing: border-box; position: relative; float: top; margin-top: 6px;}
+ .diagonal.part-1 {position: relative; transition: all 0.3s; box-sizing: border-box; float: top; }
+ .diagonal.part-2 {transition: all 0.3s; box-sizing: border-box; position: relative; float: top; margin-top: 6px;}
+ input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {transition: all 0.3s; box-sizing: border-box; opacity: 0;}
+ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {transition: all 0.3s; box-sizing: border-box; transform: rotate(135deg); margin-top: 16px; background-color: #e0218a; }
+ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {transition: all 0.3s; box-sizing: border-box; transform: rotate(-135deg);  margin-top: -16px; background-color: #e0218a; }
+  /*Nav Icons*/
+ .MenuIconboxes {display: flex; text-align: center; justify-content: space-between; position: absolute; z-index: 4; margin-top:15px; margin-bottom:20px; width: 60%;}
+ .MenuIconboxes img {height:65px; width: auto;}
+ .menucopyrightsentence {color:#ffff; font-size: .7rem; bottom: 0px;}
+ .FacebookMenuIcon {width: 40px; height:65px; transition: all 0.2s;}
+ .FacebookMenuIcon:hover {animation: jiggle 0.3s;animation-iteration-count: infinite;}
+ @keyframes jiggle {0% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+ .InstagramMenuIcon {width: 40px; height:65px; transition: all 0.5s;}
+ .InstagramMenuIcon:hover {animation: jiggle 0.3s;animation-iteration-count: infinite;}
+ @keyframes jiggle {0% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+ .EmailMenuIcon {width: 40px; height:65px; transition: all 0.2s;}
+ .EmailMenuIcon:hover {animation: jiggle 0.3s;animation-iteration-count: infinite;}
+ @keyframes jiggle {0% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+
+
+ header {overflow: hidden;}
+ header img{width: 100%; height: auto; margin: 0px 0px -7px 0px; padding: 0px;}
+ 
+ .container {height: 140px; z-index: 9; align-items: center; overflow: hidden; margin-bottom:-10px;}
+ .ocean {z-index: 9; height: 1%; width: 100%; position: relative; bottom: 0; left: 0;}
+ .wave2 {background: url(../images/wave2.svg) repeat-x; position: absolute; bottom: 0; width: 6400px; height: 198px; animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite; transform: translate3d(0, 0, 0);}
+ .wave2:nth-of-type(1) {bottom: -3px; animation: wave2 7.6s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell2 8s ease -1.125s infinite; opacity: 1;}
+ .wave2:nth-of-type(2) {bottom: 0px; animation: wave2 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell2 8s ease -1.125s infinite; opacity: 1;}
+ @keyframes wave2 {0% {margin-left: 0;}100% {margin-left: -1600px; }}
+ @keyframes swell2 {0%, 100% {transform: translate3d(0, -2px, 0);} 50% {transform: translate3d (0, 5px, 0);}}
+ .endWave2{display:none;}
+ 
+ #indexsection1 {background-color: linear-gradient(70deg,#920999 70%, #710876 100%); height: auto; padding: 0px 60px 0px 60px; margin: 0px 0px 0px 0px; border: solid #920999 .1px;}
+ #indexsection1 h1{font-size: 2rem; color:#fff; line-height: 35px; text-align: center;}
+ 
+ #indexpinksection {background-color: #e0218a; background: linear-gradient (180deg,#dd3e95  30%, #e0218a 70%); display: flex; margin: 0; text-align: center; background-image: url(../images/kiss.png);}
+ #indexpinksection p {color:#fff; padding: 60px 60px; text-align: justify;}
+ #indexpinksection p img{padding-top: 20px; height: 200px; width:auto; }
+ #indexpinksection img{width: 50%;height: 100%;}
+ 
+ #indexpurplesection {background-color: #920999; background: linear-gradient(180deg,#7a0980 30%, #920999 70%); display: flex; margin: 0; text-align: right; background-image: url(../images/comicsashaysmall.png); background-position: right 0px top 0px;}
+ #indexpurplesection p {color:#fff; padding: 60px 60px; text-align: justify;}
+ #indexpurplesection img{width: 50%;height: 100%;}
+ 
+ 
+ .instawidgetbox {width: 100%; padding-top: 25px; background-color: #e0218a;}
+ 
+
+
+
+
+
+  /*Media Querries*/
+  @media screen and (max-width: 965px) {body {font-size: 1em;}}
+  @media screen and (max-width: 920px) {#indexsection1 span {display: block;}}
+  @media screen and (max-width: 785px) {body {font-size: .8em;}}
+  @media screen and (max-width: 682px) {body {font-size: .7em;}}
+  @media screen and (max-width: 682px) {#indexpinksection p {padding: 40px 40px;} #indexpurplesection p {padding: 40px 40px;} body {font-size: .8em;}}
+  @media screen and (max-width: 664px) {.sidebarIconToggle {top: 30px; left: 30px; height: 25px; width: 35px;}}
+  @media screen and (max-width: 602px) {body {font-size: .7em;}}
+  @media screen and (max-width: 555px) {.sidebarIconToggle {top: 25px; left: 25px; height: 15px; width: 35px;}}
+  @media screen and (max-width: 551px) {#indexpinksection p {padding: 20px 30px;} #indexpurplesection p {padding: 20px 30px;} body {font-size: .7em;} #indexsection1 h1{font-size: 1.3rem; line-height: 24px;}}
+  @media screen and (max-width: 513px) {#indexsection1 h1{font-size: 1.5rem; line-height: 30px;} body {font-size: .6em;}} 
+  @media screen and (max-width: 488px) {.sidebarIconToggle {transition: all 0.3s; box-sizing: border-box; cursor: pointer; position: absolute; z-index: 99; height: 100%; width: 100%; height: 20px; width: 30px; position: fixed;} .horizontal {margin-top: 6px;} .diagonal.part-2 {margin-top: 6px;}}
+  @media screen and (max-width: 430px) {#indexpinksection p {padding: 15px 20px;} #indexpurplesection p {padding: 15px 20px;} body {font-size: .5.5em;}} 
+  @media screen and (max-width: 414px) {body {font-size: .5em;} #indexsection1 h1{font-size: 1.3rem; line-height: 24px;}}
+  @media screen and (max-width: 374px) {#indexsection1 h1{font-size: 1.1rem; line-height: 22px;}}
+  @media screen and (max-width: 351px) {#indexpinksection p {padding: 10px 20px;} #indexpurplesection p {padding: 10px 20px;} body {font-size: .4.5em;}}
+  @media screen and (max-width: 340px) {body {font-size: .4em;} #indexsection1 h1{font-size: 1rem; line-height: 20px;}}
